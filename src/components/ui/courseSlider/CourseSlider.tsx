@@ -22,7 +22,7 @@ const CourseSlider:React.FC<CourseSliderInterface> = async ({category, sortBy, s
                 <Link href={''} className={styles.moreBtn}>See more --</Link>
             </div>
             <div className={styles.cartWrapper}>
-                {data.map(el => <Link href={`/course/${el.nativeId}`}><CourseCart data={el} key={el._id}/></Link>)}
+                {data.map(el => <Link key={el._id} href={`/course/${el.nativeId}`}><CourseCart data={el}/></Link>)}
             </div>
         </div>
     )

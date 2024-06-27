@@ -48,10 +48,10 @@ const CourseDetail: React.FC<CourseDetailInterface> = async ({data}) => {
                 <p className={styles.paragraph}>{Certification}</p>
                 <h3 className={styles.paragraphHeading}>Who this course is for</h3>
                 <p className={styles.paragraph}>{WhoThisCourseIsFor}</p>
-                <h3 className={styles.paragraphHeading}>What you'll learn in this course:</h3>
+                <h3 className={styles.paragraphHeading}>What you ll learn in this course:</h3>
                 <ul className={styles.paragraph}>
-                    {WhatYouLearnInThisCourse.map((el:string) => (
-                        <li>{el}</li>
+                    {WhatYouLearnInThisCourse.map((el:string, i: number) => (
+                        <li key={i}>{el}</li>
                     ))}
                 </ul>
             </div>
