@@ -1,0 +1,14 @@
+.heading{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 150%;
+    margin: 32px 0 36px;
+}
+.cardWrapper{
+    width: 1280px;
+    margin: 0 auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}

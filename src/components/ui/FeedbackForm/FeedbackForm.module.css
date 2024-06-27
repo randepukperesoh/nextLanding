@@ -1,0 +1,46 @@
+.wrapper{
+    width: 1280px;
+    height: 331px;
+    border-radius: 20px;
+    background-color: #211903;
+    margin: 0 0 145px 0;
+    padding: 64px 0 ;
+    color: #FFFFFF;
+    text-align: center;
+}
+.formHeading{
+    line-height: 130%;
+    font-size: 36px;
+    font-weight: 500;
+}
+.formParagraph{
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+}
+.formWrapper{
+    width: 509px;
+    height: 60px;
+    margin: 32px auto 0;
+    display: flex;
+    align-items: center;
+}
+.formWrapper input{
+    width: 357px;
+    height: 60px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: rgba(rgb(255, 255, 255), green, blue, 0.1);
+    color: rgb(170, 60, 60);
+    font-size: 16px;
+    line-height: 30%;
+}
+.formWrapper button{
+    width: 142px;
+    height: 60px;
+    border-radius: 0 10px 10px 0;
+    background: #F1B300;
+    color: white;
+    font-size: 16px;
+    border: none;
+}

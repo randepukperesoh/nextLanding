@@ -1,0 +1,7 @@
+.sliderWrapper{
+    margin: 0 0 52px 0;
+}
+.cartWrapper{
+    display: flex;
+    gap: 24px;
+}

@@ -1,0 +1,59 @@
+.wrapper{
+    width: 1280px;
+    margin: 0 auto 0;
+    line-height: 150%;
+    font-size: 16px;
+}
+.shortInfo{
+    margin: 70px auto 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 32px 36px 32px 36px;
+    background-color: white;
+    border-radius: 16px;
+}
+.courseTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+.infoList{
+    margin: 8px 0 8px 0;
+}
+.infoList span{
+    font-weight: bold;
+}
+.btnWrapper{
+    display: flex;
+    gap: 24px;
+}
+.btnWrapper button{
+    width: 188px;
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+}
+.saleBtn{
+    background: #FAB900;
+    color: #FFFFFF;
+}
+.trialBtn{
+    background: #FFF7E0;
+    color: #1F1C14;
+}
+.longInfo{
+    margin: 32px auto 0;
+}
+.paragraphHeading{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 12px 0;
+}
+.paragraph{
+    font-size: 14px;
+    margin: 0 0 24px 0;
+}
+.similarWrapper{
+    display: flex;
+    gap: 40px;
+}

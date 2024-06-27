@@ -1,0 +1,52 @@
+.storeHeaderWrapper{
+    width: 60%;
+    margin: 0 auto 0;
+}
+.navMenu{
+    display: flex;
+    gap: 120px;
+    list-style: none;
+    align-items: center;
+}
+.menuItem{
+    display: flex;
+    width: 140px;
+    height: 56px;
+    font-size: 16px;
+    text-wrap: nowrap;
+    border-radius: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.activeItem{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.sortWrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.inputWrapper{
+    width: 555px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 7px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.input{
+    width: 495px;
+    height: 46px;
+    box-sizing: border-box;
+    border: none;
+}
+.searchBtn{
+    width: 46px;
+    height: 46px;
+    background: #FAB900;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}

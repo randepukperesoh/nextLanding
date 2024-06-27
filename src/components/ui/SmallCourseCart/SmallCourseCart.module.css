@@ -1,0 +1,30 @@
+.wrapper{
+    width: 400px;
+    height: 140px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    padding: 12px 12px 18px;
+    gap: 16px;
+}
+.similarHeading{
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: bold;
+}
+.similarP{
+    font-size: 10px;
+    line-height: 160%;
+    color: #1F1C14;
+}
+.price{
+    line-height: 150%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #F15911;
+}
+.price span{
+    color: #230F0F;
+    text-decoration: line-through;
+    font-size: 12px;
+}

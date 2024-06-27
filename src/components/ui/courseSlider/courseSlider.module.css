@@ -1,0 +1,16 @@
+.sliderWrapper{
+    margin: 0 0 52px 0;
+}
+.moreBtn{
+    border: none;
+
+}
+.sliderHeading{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 32px 0;
+}
+.cartWrapper{
+    display: flex;
+    gap: 24px;
+}

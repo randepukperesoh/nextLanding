@@ -1,0 +1,60 @@
+.cartWrapper{
+    width: 302px;
+    height: 411px;
+    background-color: #fcfcfc;
+    border-radius: 14px;
+    position: relative;
+}
+.studentsInfo{
+    width: 225px;
+    height: 41px;
+    border-radius: 40px;
+    background-color: #FAFAFA;
+    position: absolute;
+    top: 152px;
+    left: 40px;
+    z-index: 10;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.imageCart{
+    border-radius: 14px 14px 0 0;
+}
+.contentWrapper{
+    padding: 0 20px;
+}
+.headingCart{
+    margin: 41px 0 0 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 150%;
+}
+.descriptionP{
+    margin: 10px 0 0 0;
+    font-size: 10px;
+    line-height: 160%;
+}
+.priceWrapper{
+    margin: 22px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: bold;
+    color: #F15911;
+    align-items: center;
+}
+.priceWrapper p span{
+    color: #230F0F;
+    text-decoration: line-through;
+    font-size: 15px;
+    font-weight: normal;
+}
+.cartBtn{
+    background: rgba(#FAB900, 0.1);
+    width: 41px;
+    height: 41px;
+    border: none;
+    border-radius: 50%;
+}
