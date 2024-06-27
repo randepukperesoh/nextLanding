@@ -16,15 +16,17 @@ const Page = async ({
     searchParams,
 }: {
     searchParams?: {
-        query?: Record<string, string>;
+        category?: string;
+        sortBy?: string;
+        search?: string;
     };
 }) => {
     const categoryObjects = await sanityFetch<SanityDocument[]>({query: '*[ _type == "Category"] {category}'})
     const categories = categoryObjects.reduce((acc: string[], cur) => [...acc, cur.category], [])
 
-    const category: string = searchParams['category'] || 'All courses';
-    const sortBy: string = searchParams['sortBy'] || '';
-    const search: string = searchParams['search'] || '';
+    const category: string = searchParams?.['category'] || 'All courses';
+    const sortBy: string = searchParams?.['sortBy'] || '';
+    const search: string = searchParams?.['search'] || '';
 
     return(
         <main>
