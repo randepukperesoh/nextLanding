@@ -12,9 +12,8 @@ interface CourseSliderInterface {
 }
 
 const CourseSlider:React.FC<CourseSliderInterface> = async ({category, sortBy, search}) => {
-    const query = `*[_type == 'course' && category._ref in *[_type == 'Category' && category == '${category}']._id ]`
+    const query = `*[_type == 'course' && category._ref in *[_type == 'Category' && category == '${category}']._id ${search ? `&& title match '${search}*'` : ''}] | order(_createdAt ${sortBy}) `
     const data = await sanityFetch<SanityDocument[]>({query: query});
-
 
     return(
         <div className={styles.sliderWrapper}>

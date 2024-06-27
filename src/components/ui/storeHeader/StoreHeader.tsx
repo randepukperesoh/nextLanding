@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import styles from './StoreHeader.module.css'
 import React from 'react'
-import { useParams, usePathname, useSearchParams } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 
 interface StoreHeaderInterface {
@@ -49,7 +49,7 @@ const StoreHeader:React.FC<StoreHeaderInterface> = ({categories}) => {
             </nav>
             <div className={styles.sortWrapper}>
                 <div className={styles.inputWrapper}>
-                    <input defaultValue={search} className={styles.input} onChange={handleChangeInput} placeholder='Serach Course, Teacher name' type='text'/>
+                    <input defaultValue={search} className={styles.input} onChange={handleChangeInput} placeholder='Search Course, Teacher name' type='text'/>
                     <button className={styles.searchBtn}>
                         <Image src='/outline.png' width={24} height={24} alt='search logo'/>
                     </button>

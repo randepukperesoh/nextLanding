@@ -1,9 +1,4 @@
-import styles from './store.module.css'
 import CourseSlider from "../courseSlider/CourseSlider"
-import StoreHeader from "../storeHeader/StoreHeader"
-import { SanityDocument } from 'next-sanity'
-import { sanityFetch } from '@/sanity/lib/client'
-import { headers } from 'next/headers'
 import React from 'react'
 interface StoreInterface {
     category: string,
@@ -13,13 +8,12 @@ interface StoreInterface {
 }
 
 const Store: React.FC<StoreInterface> = async ({categories, category, sortBy, search}) => {
-
     return(
         <div>
-            {category !== 'All courses' && (
+            {(category !== 'All courses' && category) && (
                     <CourseSlider key={category} search={search} sortBy={sortBy} category={category}/>
             )}
-            {category === 'All courses' && (
+            {(category === 'All courses' || category === undefined ) && (
                 <>
                     {categories.map(el => (
                         <CourseSlider key={el} search={search} sortBy={sortBy} category={el}/>

@@ -10,11 +10,8 @@ interface SimilarSliderInterface {
 }
 
 const SimilarSlider: React.FC<SimilarSliderInterface> = async ({nativeId}) => {
-
     const categoryRef = await sanityFetch<SanityDocument[]>({query: `*[ _type == 'course' && nativeId == ${nativeId}] {category}`})
-    // console.log(categoryRef[0])
     const categoryName = await sanityFetch<SanityDocument[]>({query: `*[_type == 'Category' && _id == '${categoryRef[0].category._ref}']`})
-    // console.log(categoryName)
     const query = `*[ _type == 'course' && nativeId != ${nativeId} && category._ref in *[_type == 'Category' && category == '${categoryName[0].category}']._id ] [0 ... 3]`
     const data = await sanityFetch<SanityDocument[]>({query: query})
 

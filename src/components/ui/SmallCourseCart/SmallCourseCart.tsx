@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './SmallCourseCart.module.css'
-import { sanityFetch } from '@/sanity/lib/client'
 import { SanityDocument } from 'next-sanity'
 import Image from 'next/image'
 import { generateUrl } from '../../utils/generateUrl'
@@ -9,7 +8,7 @@ interface SmallCourseCartInterface {
     data: SanityDocument,
 }
 
-const SmallCourseCart: React.FC<SmallCourseCartInterface> = async({data}) => {
+const SmallCourseCart: React.FC<SmallCourseCartInterface> = ({data}) => {
     const { realCoasts, description, title, image, fakeCoasts } = data
 
     return(

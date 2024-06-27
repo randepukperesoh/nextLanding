@@ -16,7 +16,6 @@ const TeacherCard: React.FC<TeacherCardInterface> = ({data}) => {
             <Image src={generateUrl(image).url()} width={242} height={229} alt="Teacher image"/>
             <h5>{name}</h5>
             <Stars numberOfStars={rating}/>
-            {/* <span>{rating}</span> */}
             <p>{description}</p>
         </div>
     )
