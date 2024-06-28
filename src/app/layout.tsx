@@ -21,10 +21,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={nunito.className}>
         <header className={styles.header}>
-          <div className={styles.logo}>
-            <Image width={48} height={37} src='/bee1.png' alt="logo"/>
-            <p>Edudu</p>
-          </div>
+          <Link href='/'>
+            <div className={styles.logo}>
+              <Image width={48} height={37} src='/bee1.png' alt="logo"/>
+              <p>Edudu</p>
+            </div>
+          </Link>
           <nav>
             <ul className={styles.navMenu}>
               <li><Link href='/course'>Course</Link></li>

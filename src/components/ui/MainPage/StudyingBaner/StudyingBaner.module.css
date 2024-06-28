@@ -1,0 +1,22 @@
+.wrapper{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    margin: 150px 0 0 0;
+    padding: 73px 106px 73px 107px;
+}
+.heading{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 130%;
+}
+.list{
+    margin: 41px 0 0 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #1F1C14;
+}
+.list li {
+    margin: 24px 0 0 0;
+}

@@ -1,0 +1,20 @@
+.wrapper{
+    margin: 150px 0 60px;
+    width: 100%;
+    background-color: #FFF8E5;
+    min-height: 558px;
+    padding: 80px;
+}
+.heading{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 55%;
+}
+.sliderWrapper{
+    padding: 50px 0 0 0;
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    gap: 30px;
+}

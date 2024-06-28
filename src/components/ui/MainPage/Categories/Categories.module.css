@@ -1,0 +1,35 @@
+.wrapper{
+    width: 1148px;
+    margin: 150px auto 0;
+}
+.heading{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 55%;
+    text-align: center;
+}
+.paragraph{
+    margin: 16px 0 0 0;
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 400;
+    color: rgba(#1F1C14, 0.7);
+    text-align: center;
+}
+.categoryWrapper{
+    display: flex;
+    gap: 36px;
+    margin: 40px auto 0;
+}
+.categoryItem{
+    width: 260px;
+    height: 100px;
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 20px 0 20px 32px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+    gap: 20px;
+}

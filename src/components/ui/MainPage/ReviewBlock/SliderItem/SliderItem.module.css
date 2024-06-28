@@ -1,0 +1,13 @@
+.wrapper {
+    width: 358px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    flex-basis: 358px;
+}
+.heading{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+}

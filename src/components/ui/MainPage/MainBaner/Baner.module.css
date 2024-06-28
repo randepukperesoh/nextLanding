@@ -1,0 +1,33 @@
+.wrapper{
+    width: 1300px;
+    margin: 44px auto 0;
+    display: flex;
+}
+.infoWrapper{
+    padding: 0 10px;
+}
+.banerHeading{
+    font-size: 48px;
+    line-height: 130%;
+    font-weight: 800;
+}
+.banerHeading span{
+    font-weight: 600;
+}
+.banerP{
+    margin: 16px 0 0 0;
+    font-size: 16px;
+    line-height: 150%;
+    text-wrap: wrap;
+}
+.button{
+    margin: 56px 0 0 0;
+    width: 273px;
+    height: 70px;
+    background: #FAB900;
+    border-radius: 16px;
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+}

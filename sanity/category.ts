@@ -9,6 +9,11 @@ export const category = defineType({
             name: 'category',
             type: 'string',
             title: 'Category'
+        }),
+        defineField({
+            name: 'icon',
+            type: 'image',
+            title: 'Icon'
         })
     ]
 })
