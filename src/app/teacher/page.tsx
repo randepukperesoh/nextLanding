@@ -1,4 +1,3 @@
-import { Metadata } from 'next'
 import TeacherPage from '../../components/ui/TeacherPage/TeacherPage'
 import { sanityFetch } from '@/sanity/lib/client';
 import { SanityDocument } from 'next-sanity';
@@ -19,12 +18,6 @@ export const generateMetadata = async () => {
             keywords: keywords
         }
     }
-}
-
-export const metadata: Metadata = {
-    title: 'Edudu преподователи',
-    description: 'Все учителя школы Edudu',
-    keywords: 'Обучение, курсы, дети, школа, репетитор'
 }
 
 const Teacher = () => {
