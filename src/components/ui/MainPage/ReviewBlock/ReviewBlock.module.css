@@ -14,6 +14,7 @@
 .sliderWrapper{
     padding: 50px 0 0 0;
     display: flex;
+    margin: 0 auto 0;
     width: 1200px;
     align-items: center;
     gap: 30px;
