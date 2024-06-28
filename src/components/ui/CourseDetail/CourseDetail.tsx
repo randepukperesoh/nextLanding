@@ -2,7 +2,7 @@ import styles from './CourseDetail.module.css'
 import { SanityDocument } from "next-sanity"
 import Image from 'next/image'
 import React from "react"
-import SimilarSlider from '../SimilarSlider/SimilarSlider'
+import SimilarSlider from './SimilarSlider/SimilarSlider'
 import { generateUrl } from '../../utils/generateUrl'
 import FeedbackForm from '../FeedbackForm/FeedbackForm'
 import Stars from '../Stars/Stars'

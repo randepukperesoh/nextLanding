@@ -1,5 +1,5 @@
 import { SanityDocument } from "next-sanity";
-import TeacherCard from "../TeacherCard/TeacherCard"
+import TeacherCard from "./TeacherCard/TeacherCard"
 import { sanityClientFetch } from "@/sanity/lib/client";
 import styles from './TeacherPage.module.css'
 

@@ -1,5 +1,5 @@
+import CourseSlider from "../courseSlider/CourseSlider"
 import React from 'react'
-import CourseSlider from '../CoursePage/courseSlider/CourseSlider'
 interface StoreInterface {
     category: string,
     categories: string[],

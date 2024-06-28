@@ -7,6 +7,7 @@ import FeedbackForm from "../components/ui/FeedbackForm/FeedbackForm";
 import ReviewBlock from "../components/ui/MainPage/ReviewBlock/ReviewBlock";
 import { sanityFetch } from "@/sanity/lib/client";
 import { SanityDocument } from "next-sanity";
+import { generateUrl } from "../components/utils/generateUrl";
 
 export type image = {
   _type: string,
@@ -14,6 +15,23 @@ export type image = {
       _ref:string,
       _type: string,
     }
+}
+
+export const generateMetadata = async () => {
+  const product = await sanityFetch<SanityDocument[]>({query: `*[ _type == 'mainPage'] {meta}`})
+  const {keywords, title, description, ogImages } = product[0].meta;
+  const url = generateUrl(ogImages.asset._ref).url()
+  return{
+      title: description,
+      description: title,
+      keywords: keywords,
+      openGraph:{
+          images: url,
+          title: title,
+          description: description,
+          keywords: keywords
+      }
+  }
 }
 
 const Home = async () => {

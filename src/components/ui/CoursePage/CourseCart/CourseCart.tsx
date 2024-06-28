@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from './CourseCart.module.css'
 import { SanityDocument } from 'next-sanity'
 import React from 'react'
-import { generateUrl } from '../../utils/generateUrl'
+import { generateUrl } from '@/src/components/utils/generateUrl'
 
 interface CourseCartInterface {
     data: SanityDocument

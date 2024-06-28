@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import CourseCart from '../CourseCart/CourseCart'
 import styles from './courseSlider.module.css'
 import React from 'react';
 import { sanityFetch } from '@/sanity/lib/client';
 import { SanityDocument } from "next-sanity";
+import CourseCart from '../CourseCart/CourseCart';
 
 interface CourseSliderInterface {
     category: string,

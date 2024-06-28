@@ -6,6 +6,17 @@ export const mainPage = defineType({
     type: 'document',
     fields:[
         defineField({
+            name: 'meta',
+            type: 'object',
+            fields:[
+                {type:'string', name:'title'},
+                {type:'string', name:'description'},
+                {type: 'string', name: 'keywords'},
+                {type: 'image', name: 'ogImages'}
+            ],
+            title: 'Meta main page'
+        }),
+        defineField({
             name: 'mainBaner',
             type: 'object',
             fields:[

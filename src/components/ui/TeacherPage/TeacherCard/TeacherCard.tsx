@@ -1,8 +1,8 @@
+import { generateUrl } from '@/src/components/utils/generateUrl';
 import styles from './TeacherCard.module.css'
 import { SanityDocument } from "next-sanity";
 import Image from "next/image";
-import { generateUrl } from '../../utils/generateUrl';
-import Stars from '../Stars/Stars';
+import Stars from '../../Stars/Stars';
 
 interface TeacherCardInterface {
     data: SanityDocument

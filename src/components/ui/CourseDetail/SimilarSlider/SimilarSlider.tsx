@@ -1,9 +1,9 @@
+import { sanityFetch } from "@/sanity/lib/client"
+import SmallCourseCart from "../SmallCourseCart/SmallCourseCart"
 import { SanityDocument } from "next-sanity"
 import styles from './SimilarSlider.module.css'
 import Link from "next/link"
 import React from "react"
-import { sanityFetch } from "@/sanity/lib/client"
-import SmallCourseCart from "../CourseDetail/SmallCourseCart/SmallCourseCart"
 
 interface SimilarSliderInterface {
     nativeId: string

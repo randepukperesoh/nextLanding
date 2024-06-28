@@ -1,15 +1,26 @@
 import { sanityFetch } from '@/sanity/lib/client';
-import SpecialOffer from '@/src/components/ui/specialOffer/SpecialOffer'
-import Store from '@/src/components/ui/store/Store'
-import StoreHeader from '@/src/components/ui/storeHeader/StoreHeader';
+import SpecialOffer from '@/src/components/ui/CoursePage/specialOffer/SpecialOffer'
+import Store from '@/src/components/ui/CoursePage/store/Store'
+import StoreHeader from '@/src/components/ui/CoursePage/storeHeader/StoreHeader';
 import { SanityDocument } from 'next-sanity';
 import styles from './Page.module.css'
-import { Metadata } from 'next';
+import { generateUrl } from '@/src/components/utils/generateUrl';
 
-export const metadata: Metadata = {
-    title: 'Edudu курсы',
-    description: 'Все курсы нашей школы Edudu',
-    keywords: 'Обучение, курсы, дети, школа, репетитор'
+export const generateMetadata = async () => {
+    const product = await sanityFetch<SanityDocument[]>({query: `*[ _type == 'coursePage'] {keywords, title, description, ogImages}`})
+    const {keywords, title, description, ogImages } = product[0];
+    const url = generateUrl(ogImages.asset._ref).url()
+    return{
+        title: description,
+        description: title,
+        keywords: keywords,
+        openGraph:{
+            images: url,
+            title: title,
+            description: description,
+            keywords: keywords
+        }
+    }
 }
 
 const Page = async ({
