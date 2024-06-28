@@ -58,5 +58,4 @@ const Home = async () => {
     </main>
 );
 }
-// поправить названия у mainPage
 export default Home
